@@ -1,0 +1,173 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #00aaff, #4e6ef2); /* Blue gradient background */
+    color: #333;
+}
+
+/* Header */
+header {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #4e6ef2;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+    color: #ff6bbf;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff6bbf;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffb6d1;
+}
+
+/* Main Section */
+main {
+    padding: 40px 20px;
+}
+
+/* Color Boxes */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #4e6ef2;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for 3D effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for box */
+.box:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Specific Color Backgrounds with Text Colors */
+.box.tomato {
+    background-color: #FF6347;
+    color: white;
+}
+
+.box.orange {
+    background-color: #FFA500;
+    color: white;
+}
+
+.box.dodgerblue {
+    background-color: #1E90FF;
+    color: white;
+}
+
+.box.mediumseagreen {
+    background-color: #3CB371;
+    color: white;
+}
+
+.box.gray {
+    background-color: #808080;
+    color: white;
+}
+
+.box.slateblue {
+    background-color: #6A5ACD;
+    color: white;
+}
+
+.box.violet {
+    background-color: #EE82EE;
+    color: white;
+}
+
+.box.lightgray {
+    background-color: #D3D3D3;
+    color: black; /* Adjusted to black for better readability */
+}
+
+/* Color Examples Section */
+.color-examples h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff6bbf;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.color-examples p {
+    font-size: 1.4em; /* Adjusted size for consistent readability */
+    line-height: 1.8;
+    text-align: center;
+    color: #f8b0d6;
+}
+
+/* Footer */
+footer {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px 0;
+    text-align: center;
+    border-top: 5px solid #4e6ef2;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.3em;
+    color: #ff6bbf;
+}
+
+/* HEX Page Fixes */
+.hex-page-text {
+    color: #333;
+    font-size: 1.4em; /* Adjusted size for consistent readability */
+    line-height: 1.8;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+}
